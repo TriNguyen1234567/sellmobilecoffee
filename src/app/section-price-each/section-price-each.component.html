@@ -1,0 +1,255 @@
+<section class="sec price each" id="focused_list">
+    <!-- <h2 class="ttlh2" style="font-family: auto;">Danh Mục Sản Phẩm</h2> -->
+    <div class="tabs">
+        <input id="cate1" type="radio" name="tab_item1" checked="">
+        <label class="tab_item" for="cate1">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">iPhone New</font>
+            </font>
+        </label>
+        <input id="cate2" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate2">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">iPad</font>
+            </font>
+        </label>
+        <input id="cate3" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate3">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Macbook New</font>
+            </font>
+        </label>
+
+        <input id="cate4" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate4">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Air Pods</font>
+            </font>
+        </label>
+
+        <input id="cate5" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate5">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Apple Watch</font>
+            </font>
+        </label>
+
+        <input id="cate6" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate6">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Sim Data</font>
+            </font>
+        </label>
+
+        <input id="cate7" type="radio" name="tab_item1" (click)="show()">
+        <label class="tab_item" for="cate7">
+            <font style="vertical-align: inherit;">
+                <font
+                    style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">
+                    Khuyến Mãi</font>
+            </font>
+        </label>
+
+
+        <!--カテ始まり-->
+        <div class="tab_content" id="cate1_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of iphone_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tab_content" id="cate2_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of ipad_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab_content" id="cate3_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of macbook_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab_content" id="cate4_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of air_pods_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab_content" id="cate5_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of apple_watch_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab_content" id="cate6_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of sim_data_wifi_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Creates the bootstrap modal where the image will appear -->
+    <div [style.display]="showModal ? 'block' : 'none'" class="modal" id="imagemodal" tabindex="-1" role="dialog"
+        aria-labelledby="myModalLabel" aria-hidden="true">
+        <span aria-hidden="true" class="close" (click)="hide()">&times;</span>
+        <!-- </button> -->
+            <div class="box">
+                <img src="https://lh3.google.com/u/0/d/1-WTX2Kw4ZlgLnwT9gYyFOxVXowT9eS-t=w1375-h881-iv1" alt="" />
+                <h2 style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #ec7822;font-weight: bold;">Đăng ký
+                    nhận tin khuyến mãi</h2>
+                <p></p>
+                <div class="form-control1">
+                    <input type="text;"
+                        style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+                        class="input" placeholder="Nhập địa chỉ e-mail" />
+                    <button class="btn"
+                        style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px; background-color: #ec7822;"
+                        (click)="hide()">Đăng ký</button>
+                </div>
+
+        </div>
+    </div>
+
+</section>
