@@ -21,17 +21,17 @@ export class NetworkserviceService {
   ) { }
 
   getAllMobile() {
-    const getAllMobile = 'https://mobilecoffeeserver.herokuapp.com/detail';
+    const getAllMobile = 'https://sellmobile.herokuapp.com/detail';
     return this.httpClient.get<any>(getAllMobile);    
   }
 
   getAllMobileLess() {
-    const getAllMobileLess = 'https://mobilecoffeeserver.herokuapp.com/detailLess';
+    const getAllMobileLess = 'https://sellmobile.herokuapp.com/detailLess';
     return this.httpClient.get<any>(getAllMobileLess);    
   }
 
   getMobile(data): Observable<any> {
-    const getMobileAPI = `https://mobilecoffeeserver.herokuapp.com/detail/${data}`;
+    const getMobileAPI = `https://sellmobile.herokuapp.com/detail/${data}`;
     return this.httpClient.get(getMobileAPI)
   }
      
