@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: border-box;
+	margin-top: 3px;
 }
 
 
@@ -34,6 +35,8 @@
 .form-control1 {
 	position: relative;
 	margin: 30px 0 20px;
+	width: 100%;
+	max-width: 550px;
 }
 
 .input {
@@ -129,7 +132,8 @@
       margin-top: 150px;
 
     margin-left: 0%;
-    }
+	}
+	
   }
 
 body {
@@ -181,3 +185,15 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+
+/* .sales {
+    background: #ff6801;
+    border-radius: 40px;
+    width: 15%;
+    padding: 3px 5px;
+    color: #fff;
+    font-weight: bold;
+	font-size: 11px;
+	margin-right: 20px;
+} */

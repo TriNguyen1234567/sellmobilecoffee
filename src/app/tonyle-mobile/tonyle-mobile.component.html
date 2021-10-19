@@ -1,0 +1,396 @@
+<section class="sec price each" id="focused_list">
+    <!-- <h2 class="ttlh2" style="font-family: auto;">Danh Mục Sản Phẩm</h2> -->
+    <div class="tabs">
+        <input id="cate1" type="radio" name="tab_item1" routerLink="/">
+        <label class="tab_item" for="cate1">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif">iPhone Mới</font>
+            </font>
+        </label>
+
+        <label class="tab_item" routerLink="/dien_thoai_cu">
+            <font style="vertical-align: inherit;">
+                <font
+                    style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif">
+                    iPhone Cũ</font>
+            </font>
+        </label>
+
+        <input id="cate3" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate3" routerLink="/ipad">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">iPad</font>
+            </font>
+        </label>
+        <input id="cate4" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate4" routerLink="/macbook_new">
+            <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Macbook Air</font>
+            </font>
+        </label>
+
+        <input id="cate5" type="radio" name="tab_item1" >
+        <label class="tab_item" for="cate5" routerLink="/macbookpro">
+            <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Macbook Pro</font>
+            </font>
+        </label>
+
+        <input id="cate5" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate5" routerLink="/air_pod">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Air Pods</font>
+            </font>
+        </label>
+
+        <input id="cate6" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate6" routerLink="/apple_watch">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Apple Watch</font>
+            </font>
+        </label>
+
+        <input id="cate7" type="radio" name="tab_item1">
+        <label class="tab_item" for="cate7" routerLink="/sim_data">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Sim Data</font>
+            </font>
+        </label>
+
+        <input id="cate8" type="radio" name="tab_item1" >
+        <label class="tab_item" for="cate8" routerLink="/android">
+            <font style="vertical-align: inherit;"> 
+                <font
+                    style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif;   ">
+                    Điện thoại Android</font>
+            </font>
+        </label>
+
+        <input id="cate9" type="radio" name="tab_item1" >
+        <label class="tab_item" for="cate9" routerLink="/sanphamkhac">
+            <font style="vertical-align: inherit;"> 
+                <font
+                    style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif;   ">
+                    Sản phẩm khác</font>
+            </font>
+        </label>
+        <input id="cate10" type="radio" name="tab_item1" routerLink="/phukien">
+        <label class="tab_item" for="cate10" >
+            <font style="vertical-align: inherit;"> 
+                <font
+                    style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif;   ">
+                    Phụ Kiện</font>
+            </font>
+        </label>
+        <input id="cate11" type="radio" name="tab_item1" checked="" >
+        <label class="tab_item" for="cate11" >
+            <font style="vertical-align: inherit;"> 
+                <font
+                    style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif;   ">
+                    Tony Le Mobile</font>
+            </font>
+        </label>
+
+        <!--カテ始まり-->
+        <!-- <div class="tab_content" id="cate1_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of iphone_new_less; let iphone1 of iphone_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- <div class="tab_content" id="cate2_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of dienthoaicu_less; let iphone1 of dienthoaicu">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- <div class="tab_content" id="cate3_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of ipad_new_less;let iphone1 of ipad_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- <div class="tab_content" id="cate4_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of macbook_new_less;let iphone1 of macbook_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- <div class="tab_content" id="cate5_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of air_pods_new_less;let iphone1 of air_pods_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- <div class="tab_content" id="cate6_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of apple_watch_new_less;let iphone1 of apple_watch_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- <div class="tab_content" id="cate7_content">
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <h2>
+
+                    </h2>
+                </div>
+                <ul class="tab_content_ul">
+                    <li *ngFor="let iphone of sim_data_wifi_new_less;let iphone1 of sim_data_wifi_new">
+                        <p>
+                            <a routerLink="/detail" [state]="iphone1" [queryParams]={id:[iphone.id]}>
+                                <span class="pics">
+                                    <img [src]="iphone.image1" alt="">
+                                </span>
+                                <span class="NorU new">New</span>
+                                <span class="name">
+                                    {{iphone.name}} </span>
+                                <span class="price">
+
+                                    <em> {{iphone.price}}</em>
+                                </span>
+                            </a>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div> -->
+
+
+
+        <!-- Gioi thieu Tony Le mobile -->
+        <!-- <div class="tab_content" id="cate8_content"> -->
+            <div class="tab_content_description">
+                <div class="tab_content_ttl">
+                    <br />
+                    <h2>
+                        <font style="vertical-align: inherit;">
+                            <font
+                                style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: bold; color:orangered;">
+                                Giới thiệu về công ty Tony Le</font>
+                        </font>
+
+                    </h2>
+                    <br />
+                    <h4>
+                        <font style="vertical-align: inherit;">
+                            <font
+                                style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 16px; ">
+                                - Được thành lập vào năm 2016, với sứ mệnh tiên phong trong ngành bán lẻ các thiết bị
+                                điện tử và cung cấp dịch vụ
+                                mạng viễn thông cho cộng đồng người Việt Nam đang sống và làm việc tại nhật bản.</font>
+                        </font>
+                    </h4>
+                    <br />
+                    <h4>
+                        <font style="vertical-align: inherit;">
+                            <font
+                                style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 16px; ">
+                                - Công ty có trụ sở chính tại Shinjuku trung tâm của thủ đô Tokyo Nhật Bản. Với 5 năm
+                                kinh nghiệm và nhận được
+                                niềm tin cũng như sự quan tâm của khách hàng công ty đang ngày càng trưởng thành và lớn
+                                mạnh hơn</font>
+                        </font>
+                    </h4>
+                    <br />
+                    <h4>
+                        <font style="vertical-align: inherit;">
+                            <font
+                                style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 16px; ">
+                                - Web bán hàng chính của công ty là: <a href="www.tonylemobile.com">tonylemobile.com</a>
+                            </font>
+                        </font>
+                    </h4>
+                    <br />
+                    <h4>
+                        <font style="vertical-align: inherit;">
+                            <font
+                                style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 16px; ">
+                                - Fanpage chính của công ty là: <a
+                                    href="https://www.facebook.com/TonyLeMobileTakadanobabaTokyo">Tony Le Mobile
+                                    Takadanobaba_Tokyo </a></font>
+                        </font>
+                    </h4>
+                    <br />
+                    <h4>
+                        <font style="vertical-align: inherit;">
+                            <font
+                                style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 16px; ">
+                                - Nhận thông tin khuyến mại của công ty vui lòng nhập địa chỉ email</font>
+                        </font>
+                    </h4>
+                    <div class="form-control1">
+                        <input type="text;"
+                            style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px"
+                            class="input" placeholder="Nhập địa chỉ e-mail" />
+                        <button class="btn"
+                            style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 14px; background-color: #ec7822;"
+                            (click)="hide()">Đăng ký</button>
+                    </div>
+                    <br />
+                    <h4>
+                        <font style="vertical-align: inherit;">
+                            <font
+                                style="vertical-align: inherit;font-family: Arial, Helvetica, sans-serif; font-size: 16px; ">
+
+                                - Địa chỉ công ty: <a href="https://www.google.com/maps/dir/?api=1&amp;destination=4-chōme-13+Takadanobaba,+Shinjuku+City,+Tokyo+169-0075,+Nhật+Bản"> 〒169-0075 東京都新宿区高田馬場
+                                ３丁目１２−８高田馬場センタービル２０１</a> </font>
+                        </font>
+                    </h4>
+                    <br/>
+                    <div style="display: flex; flex-wrap: wrap;">
+                        <img src="./assets/images/map.png" style="height: 400px ;width: 400px; margin-right: 25px; margin-bottom: 15px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12958.152383681567!2d139.7005517!3d35.7129827!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdb2bc0fef4a60a4e!2sTony%20Le%20Mobile%20Takadanobaba!5e0!3m2!1svi!2s!4v1619758714718!5m2!1svi!2s"
+                            width="400px" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        <!-- </div> -->
+
+        
+
+    </div>
+
+
+</section>

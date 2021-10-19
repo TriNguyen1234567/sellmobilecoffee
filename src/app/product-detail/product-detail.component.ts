@@ -4,6 +4,7 @@ import { NetworkserviceService } from '../services/networkservice.service';
 import { DomSanitizer, SafeResourceUrl, SafeUrl } from '@angular/platform-browser';
 import { Url } from 'url';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common'
 
 @Pipe({ name: 'safety' })
 export class SafePipe implements PipeTransform {
@@ -31,38 +32,20 @@ export class ProductDetailComponent implements OnInit {
   image4:String
   image5:String
   image6:String
+  image7:String
+  image8:String
+  image9:String
+  image10:String
   summary:String
   details:String
   remarks:String
   guarantee:String
   price:String
-  constructor(private sanitizer: DomSanitizer,
+  giamoi:String
+  video: String
+  constructor(private sanitizer: DomSanitizer, private location: Location,
     private networkserviceService: NetworkserviceService, private modalService: NgbModal, private route: ActivatedRoute) {
-      // this.route.queryParams
-      // .subscribe(params => {
-      //   console.log('params', params.id[0]); // { order: "popular" }
-      //   this.networkserviceService.getMobile(params.id[0]).subscribe(val => {
-      //     console.log('this.data', val)
-      //     this.data = val
-      //     console.log('this.data', this.data)
-      //     this.video = "http://tonylemobile.com/assets/images/" + this.data.video
-      //     this.image1=this.data.image1
-      //     this.image2=this.data.image2
-      //     this.image3=this.data.image3
-      //     this.image4=this.data.image4
-      //     this.image5=this.data.image5
-      //     this.image6=this.data.image6
-      //     this.name=this.data.name
-      //     this.summary=this.data.summary
-      //     this.details=this.data.details
-      //     this.remarks=this.data.remarks
-      //     this.guarantee=this.data.guarantee
-      //     this.price=this.data.price
-      //   }
-      //   );
-  
-      // }
-      // )
+      
      }
 
 
@@ -73,6 +56,10 @@ export class ProductDetailComponent implements OnInit {
   showModal4: boolean;
   showModal5: boolean;
   showModal6: boolean;
+  showModal7: boolean;
+  showModal8: boolean;
+  showModal9: boolean;
+  showModal10: boolean;
   show() {
     this.showModal = true; // Show-Hide Modal Check    
   }
@@ -118,6 +105,30 @@ export class ProductDetailComponent implements OnInit {
     this.showModal5 = false;
   }
 
+  show7() {
+    this.showModal7 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide7() {
+    this.showModal7 = false;
+  }
+
+  show8() {
+    this.showModal8 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide8() {
+    this.showModal8 = false;
+  }
+
+  show9() {
+    this.showModal9 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide9() {
+    this.showModal9 = false;
+  }
+
   show6() {
     this.showModal6 = true; // Show-Hide Modal Check    
   }
@@ -126,53 +137,88 @@ export class ProductDetailComponent implements OnInit {
     this.showModal6 = false;
   }
 
+  show10() {
+    this.showModal10 = true; // Show-Hide Modal Check    
+  }
+  //Bootstrap Modal Close event
+  hide10() {
+    this.showModal10 = false;
+  }
+
   trustedDashboardUrl: SafeResourceUrl;
   data: any
-  video: String
+ 
 
   ngOnChanges(){
     
   }
 
   ngOnInit(): void {
-    // if (window.history.state.category != null) {
-    //   this.data = window.history.state;
-    //   localStorage.setItem('data', JSON.stringify(this.data))
-    //   this.video = "http://tonylemobile.com/assets/images/" + this.data.video
-    //   console.log("editData", this.data, this.video)
-    // }
-    // else {
-    //   this.data = JSON.parse(localStorage.getItem('data'))
-    // }
-
-    this.route.queryParams
+    if (window.history.state.category != null) {
+      this.data = window.history.state;
+      console.log('this.data', this.data)
+      this.video = "./assets/images/" + this.data.video
+      console.log(this.video)
+      this.image1=this.data.image1
+      this.image2=this.data.image2
+      this.image3=this.data.image3
+      this.image4=this.data.image4
+      this.image5=this.data.image5
+      this.image6=this.data.image6
+      this.image7=this.data.image7
+      this.image8=this.data.image8
+      this.image9=this.data.image9
+      this.image10=this.data.image10
+      this.name=this.data.name
+      this.summary=this.data.summary
+      this.details=this.data.details
+      this.remarks=this.data.remarks
+      this.guarantee=this.data.guarantee
+      this.price=this.data.price
+      this.giamoi=this.data.giamoi
+    }
+    else {
+      this.route.queryParams
       .subscribe(params => {
-        console.log('params', params.id[0]); // { order: "popular" }
-        this.networkserviceService.getMobile(params.id[0]).subscribe(val => {
+        console.log('params', params.id); // { order: "popular" }
+        this.networkserviceService.getMobile(params.id).subscribe(val => {
           console.log('this.data', val)
           this.data = val
           console.log('this.data', this.data)
-          this.video = "http://tonylemobile.com/assets/images/" + this.data[0].video
+          this.video = "./assets/images/" + this.data[0].video
+          console.log(this.video)
           this.image1=this.data[0].image1
           this.image2=this.data[0].image2
           this.image3=this.data[0].image3
           this.image4=this.data[0].image4
           this.image5=this.data[0].image5
           this.image6=this.data[0].image6
+          this.image7=this.data[0].image7
+          this.image8=this.data[0].image8
+          this.image9=this.data[0].image9
+          this.image10=this.data[0].image10
           this.name=this.data[0].name
           this.summary=this.data[0].summary
           this.details=this.data[0].details
           this.remarks=this.data[0].remarks
           this.guarantee=this.data[0].guarantee
           this.price=this.data[0].price
+          this.giamoi=this.data[0].giamoi
         }
         );
 
       }
       )
+    }
+
+ 
   }
   getSafeUrl() {
     this.trustedDashboardUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.data.video);
+  }
+
+  backToLastPage(){
+this.location.back();
   }
 
 }
