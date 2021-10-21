@@ -216,7 +216,7 @@
                 <ul class="tab_content_ul">
                     <li *ngFor="let iphone2 of air_pods_new_less_name">
                         <!-- let iphone of air_pods_new_less;let iphone1 of air_pods_new; -->
-                        <div class="table-responsive">
+                        <div class="table-responsive"  >
                             <table class="table">
                                 <tbody>
                                     <tr class="g-font-weight-500">
@@ -226,7 +226,7 @@
                                             </span>
 
                                         </td>
-                                        <td class="text-left" style="vertical-align: middle;">
+                                        <td class="text-left" style="vertical-align: middle; width:200px">
                                             <span class="g-font-size-13">
                                                 {{iphone2}}
 
@@ -239,8 +239,8 @@
 
                                                 <tbody>
                                                     <tr *ngFor="let iphone of air_pods_new_less">
-                                                        <td style="width:200px" class="text-right" *ngIf = "iphone.name == iphone2 "> {{iphone.summary}}</td>
-                                                        <td style="width:200px" class="text-right" *ngIf = "iphone.name == iphone2 ">
+                                                        <td style="width:150px" class="text-right" *ngIf = "iphone.name == iphone2 "> {{iphone.summary}}</td>
+                                                        <td style="width:150px" class="text-right" *ngIf = "iphone.name == iphone2 ">
                                                             <span class="text-danger g-font-weight-600 g-font-size-15">
                                                                 {{iphone.price}}
                                                             </span><br>
